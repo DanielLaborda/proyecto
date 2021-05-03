@@ -1,0 +1,41 @@
+.vehicles {
+    display: grid;
+    grid-template-rows: [banner-s] 700px [banner-e description-s] 250px [description-e content-s] 1fr [content-e];
+    align-content: center;
+    
+    &__banner{
+        position: relative;
+        grid-row: banner-s/banner-e;
+        width: 100vw;
+        height: 700px;
+        text-transform: uppercase;
+           
+        
+        &__title {
+            position: absolute;
+            top: 175px;
+            margin-left: 140px;
+            font-size: 30px;
+        }  
+        &__slogan {
+            position: absolute;
+            top: 250px;
+            margin-left: 140px;
+            font-size: 20px;
+
+        }    
+    }
+
+    &__description {
+        grid-row: description-s/description-e;
+        margin: 40px;
+        height: 250px;
+        text-align: center;
+        display: grid;
+        justify-self: center;
+    }
+
+    
+    
+
+}

@@ -12,7 +12,6 @@ class Navbar extends Component{
                 </div>
                 <div className='navbar__item'>
                     <a className='navbar__item__categories' onClick={() => history.push('/categories')}>Categories</a>
-                    <a className='navbar__item__vehicles' onClick={() => history.push('/Vehicles')}>Vehicles</a> 
                     <a className='navbar__item__racing' onClick={() => history.push('/racing-team')}>Racing Team</a>
                 </div>
             </div>

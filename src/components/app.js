@@ -17,9 +17,9 @@ export default class App extends Component {
           <Layout>
             <Switch>
                 <Route path='/' exact component={Home}/>
-                <Route path='/categories' exact component={Category}/>
-                <Route path='/vehicles/:id' exact component={Vehicles}/>
-                <Route path='/racing-team' exact component={RacingTeam}/>
+                <Route path='/categories' component={Category}/>
+                <Route path='/vehicles/:id' component={Vehicles}/>
+                <Route path='/racing-team' component={RacingTeam}/>
             </Switch>
           </Layout>
         </Router>

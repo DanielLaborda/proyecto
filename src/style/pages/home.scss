@@ -1,6 +1,6 @@
 .home {
     display: grid;
-    grid-template-columns: minmax(20px, 250px) [s] 1fr [e] minmax(20px, 250px);
+    //grid-template-columns: minmax(20px, 250px) [s] 1fr [e] minmax(20px, 250px);
     width: 100vw;
     height: calc(100vh - 50px);
     background-image: url('../../static/images/background2.jpg');
