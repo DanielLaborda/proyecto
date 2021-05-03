@@ -1,0 +1,25 @@
+.home {
+    display: grid;
+    grid-template-columns: minmax(20px, 250px) [s] 1fr [e] minmax(20px, 250px);
+    width: 100vw;
+    height: calc(100vh - 50px);
+    background-image: url('../../static/images/background2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: grid;
+
+    &-cars,
+    &-categories,
+    &-racing {
+        background-color: rgba($color: #ccc, $alpha: 0.78);
+        padding: 2.5%;
+        margin: 5%;
+        transform: translateX(-100%);
+    }
+    &-categories,
+    &-racing {
+        display: none;
+    }
+}

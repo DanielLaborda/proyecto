@@ -1,0 +1,63 @@
+.categories-category {
+    width: 100vw;
+
+    &__content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        &-image {
+            text-align: center;
+            
+           
+            
+            
+            
+            img {
+                animation: aparecer 3s linear forwards;
+                width: 50%;
+                margin: 20px;
+            }
+        }
+
+        &-text {
+            padding: 30px;
+
+            &__title{
+                font-size: 20px;
+            }
+            &__description{
+                font-size: 16px;
+            }
+            &__link {
+                font-size: 20px;
+                color: rgb(252, 214, 1);
+            }
+            
+        }
+    }
+
+    &__cars {
+        height: 100px;
+    }
+}
+
+.car-hidden {
+    display: none!important;
+}
+
+.background-blue {
+    background-color: rgba($color: #24cbd2, $alpha: 0.78);
+    color: #ccc;
+}
+.background-white {
+    background-color: #ccc;
+}
+
+@keyframes aparecer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

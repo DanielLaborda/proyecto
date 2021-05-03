@@ -1,0 +1,40 @@
+.navbar {
+    width: 100vw;
+    height: 50px;
+    background-color:#ccc;
+    display: grid;
+    grid-template-columns: [logo-s] 400px [logo-e item-s] 1fr [item-e];
+
+    &__logo {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-column: logo-s/logo-e;
+        background-color:#3b4248;
+        transform: skewX(-6deg) translate(-10px);
+        padding-left: 25px;
+        img {
+            width: 75px;
+        }
+    }
+
+    &__item {
+        grid-column: item-s/item-e;
+        display: grid;
+        grid-template-columns: 250px 250px 250px;
+        transform: translateX(-10px);
+        a {
+            cursor: pointer;
+            padding: 20px 30px;
+            font-size: 14px;
+            transform: skewX(-6deg);  
+            height: 10px; 
+            transition: background-color .5s ease-out;
+        }
+        a:hover {
+            background-color:  #24cbd2;
+        
+        }
+        
+    }
+}
