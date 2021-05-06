@@ -4,6 +4,7 @@ import * as actions from '../../actions';
 import { connect } from 'react-redux';
 import VehiclesVersions from "../vehicles/vehiclesVersions";
 import VehiclesColors from "../vehicles/vehiclesColors";
+import ImagesVehicles from "../vehicles/imagesVehicles";
 
 
 class Vehicles extends Component{
@@ -44,11 +45,13 @@ class Vehicles extends Component{
                             
                             
                             <div className='vehicles__images'>
+                                <div>---</div>
                                 {
                                     vehicle.images.map(image => {
-                                        return <img key={image._id} className='vehicles__images__item' src={image.img} />
+                                        return <ImagesVehicles key={image._id} className='vehicles__images__item' {...image} />
                                     })
                                 }
+                                <div>---</div>
                             </div>
 
                        
@@ -56,7 +59,7 @@ class Vehicles extends Component{
                             <div className='vehicles__versions'>
                                 {
                                     vehicle.versions.map(version => {
-                                        return <VehiclesVersions key={version._id} className='vehicles__versions__item' {...version}/>
+                                        return <VehiclesVersions key={version._id} className='vehicles__versions' {...version}/>
                                     })
                                 }                                
                             </div>

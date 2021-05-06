@@ -19,7 +19,7 @@ export function setVehicle() {
                 versions: [{
                     _id:0, 
                     name: 'Premium',
-                    urlImage: 'http://via.placeholder.com/100x100',
+                    urlImage: 'http://via.placeholder.com/250x250',
                     list: [
                         '6 Cilindros en V, 1.5 Litros de 16 válvulas',
                         'Transmision 8 velocidades',
@@ -78,7 +78,7 @@ export function setVehicle() {
                     {
                         _id: 1,
                         name: 'Standart',
-                        urlImage: 'http://via.placeholder.com/100x100',
+                        urlImage: 'http://via.placeholder.com/250x250',
                         list: [
                             '4 Cilindros, 1.5 Litros de 16 válvulas',
                             'Transmision 8 velocidades',
@@ -89,7 +89,7 @@ export function setVehicle() {
                     {
                         _id: 2,
                         name: 'Confort',
-                        urlImage: 'http://via.placeholder.com/100x100',
+                        urlImage: 'http://via.placeholder.com/250x250',
                         list: [
                             '4 Cilindros, 1.5 Litros de 16 válvulas',
                             'Transmision 8 velocidades',
@@ -101,7 +101,7 @@ export function setVehicle() {
                     {
                         _id: 3,
                         name: 'Premium3',
-                        urlImage: 'http://via.placeholder.com/100x100',
+                        urlImage: 'http://via.placeholder.com/250x250',
                         list: [
                             '4 Cilindros, 1.5 Litros de 16 válvulas',
                             'Transmision 8 velocidades',
@@ -161,7 +161,7 @@ export function setVehicle() {
                     {
                         _id: 4,
                         name: 'Standart',
-                        urlImage: 'http://via.placeholder.com/100x100',
+                        urlImage: 'http://via.placeholder.com/250x250',
                         list: [
                             '4 Cilindros, 1.5 Litros de 16 válvulas',
                             'Transmision 8 velocidades',
@@ -172,7 +172,7 @@ export function setVehicle() {
                     {
                         _id: 5,
                         name: 'Confort',
-                        urlImage: 'http://via.placeholder.com/100x100',
+                        urlImage: 'http://via.placeholder.com/250x250',
                         list: [
                             '4 Cilindros, 1.5 Litros de 16 válvulas',
                             'Transmision 8 velocidades',
@@ -184,7 +184,7 @@ export function setVehicle() {
                     {
                         _id: 6,
                         name: 'Premium',
-                        urlImage: 'http://via.placeholder.com/100x100',
+                        urlImage: 'http://via.placeholder.com/250x250',
                         list: [
                             '4 Cilindros, 1.5 Litros de 16 válvulas',
                             'Transmision 8 velocidades',
@@ -244,7 +244,7 @@ export function setVehicle() {
                     {
                         _id: 7,
                         name: 'Standart',
-                        urlImage: 'http://via.placeholder.com/100x100',
+                        urlImage: 'http://via.placeholder.com/250x250',
                         list: [
                             '4 Cilindros, 1.5 Litros de 16 válvulas',
                             'Transmision 8 velocidades',
@@ -255,7 +255,7 @@ export function setVehicle() {
                     {
                         _id: 8,
                         name: 'Confort',
-                        urlImage: 'http://via.placeholder.com/100x100',
+                        urlImage: 'http://via.placeholder.com/250x250',
                         list: [
                             '4 Cilindros, 1.5 Litros de 16 válvulas',
                             'Transmision 8 velocidades',

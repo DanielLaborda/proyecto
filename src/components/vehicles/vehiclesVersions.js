@@ -6,13 +6,13 @@ class VehiclesVersions extends Component{
         const { className, name, urlImage, base_price, list } = this.props;
         return (
             <div className={`${className}__card`} >
-                <div className={`${className}__card__title`}>
+                <div className={`${className}__card__image`}>
                     <img src={urlImage} />
                 </div>
                 <div className={`${className}__card__title`}>
                     {name}
                 </div>
-                <div className={`${className}__card__title`}>
+                <div className={`${className}__card__list`}>
                     <ul>
                     {
                         list.map(item => {

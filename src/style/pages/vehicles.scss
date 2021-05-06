@@ -1,7 +1,7 @@
 .vehicles {
     display: grid;
     grid-template-rows: [banner-s] 700px [banner-e description-s] 250px [description-e content-s] 1fr [content-e];
-    align-content: center;
+    justify-content: center;
     
     &__banner{
         position: relative;
@@ -32,10 +32,43 @@
         height: 250px;
         text-align: center;
         display: grid;
-        justify-self: center;
+        justify-content: center;
     }
 
-    
-    
+
+    &__versions {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+
+
+        &__card {
+            width: 300px;
+            justify-self: center;
+            display: grid;
+            &__image{
+                justify-self: center;
+                width: 250px;
+                height: auto;
+            }
+        }
+       
+    } 
+    &__colors{
+        display: grid;
+    }
+    @media (max-width: 768px) {
+        &__versions {
+            display: grid;
+            background-color: lawngreen;
+    grid-template-columns: 100vw;
+        }
+    }
+    @media (mim-width: 768px) and (max-width:998px) {
+        &__versions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 
 }
