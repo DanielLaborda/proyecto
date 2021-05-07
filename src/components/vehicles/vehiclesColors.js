@@ -7,15 +7,15 @@ export default class VehiclesColors extends Component{
     render(){
         const { className, color, name, price} = this.props;
         return (
-            <div className={`${className}__card`} >
-                <div className={`${className}__card__color`}>
-                    {color}
+            <div className={`${className}`} >
+                <div className={`${className}__color`} style={{background:`#${color}`}}>
+                    
                 </div>
-                <div className={`${className}__card__name`}>
+                <div className={`${className}__name`}>
                     {name}
                 </div>
-                <div className={`${className}__card__price`}>
-                    {price}
+                <div className={`${className}__price`}>
+                    ${price}
                 </div>
                 
             </div>

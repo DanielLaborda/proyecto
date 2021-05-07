@@ -1,14 +1,12 @@
 .home {
     display: grid;
     //grid-template-columns: minmax(20px, 250px) [s] 1fr [e] minmax(20px, 250px);
-    width: 100vw;
+    max-width: 100vw;
     height: calc(100vh - 50px);
     background-image: url('../../static/images/background2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
-    display: grid;
 
     &-cars,
     &-categories,
@@ -21,5 +19,11 @@
     &-categories,
     &-racing {
         display: none;
+    }
+}
+@media (max-width: 648px) {
+    .home {
+        background-repeat:repeat-y;
+
     }
 }

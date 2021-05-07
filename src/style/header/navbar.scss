@@ -3,7 +3,6 @@
     background: #ccc;
     align-items: center;
     padding: 10px 40px;
-    width: 100%;
 
     &__logo {
         display: flex;
@@ -48,7 +47,6 @@
     .navbar {
         &__options {
             display: flex;
-            width: 100%;
             height: 350px;
             position: absolute;
             top: 75px;

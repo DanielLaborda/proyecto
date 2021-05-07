@@ -57,3 +57,10 @@
         transform: translateX(0);
     }
 }
+
+@media (max-width: 648px) {
+    /*Mobile View */
+    .categories-category__content {
+        display: block;
+    }
+}

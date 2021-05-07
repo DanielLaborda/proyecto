@@ -42,8 +42,8 @@ class Vehicles extends Component{
                                 <h1>{vehicle.description}</h1>
                                 <h1>Warranty {vehicle.warranty}</h1>
                             </div>
-                            
-                            
+
+
                             <div className='vehicles__images'>
                                 <div>---</div>
                                 {
@@ -54,8 +54,6 @@ class Vehicles extends Component{
                                 <div>---</div>
                             </div>
 
-                       
-                            
                             <div className='vehicles__versions'>
                                 {
                                     vehicle.versions.map(version => {
@@ -63,18 +61,14 @@ class Vehicles extends Component{
                                     })
                                 }                                
                             </div>
-                            
-                            
-
                             <div className='vehicles__colors'>
                                 {
                                     vehicle.colors.map(color => {
-                                        return <VehiclesColors key={color.name} className='vehicles__colors' {...color} />
+                                        return <VehiclesColors key={color.name} className='vehicles__colors__item' {...color} />
                                     })
                                 }
                             </div>
 
-                           
                             
                         </div>
                     )

@@ -15,19 +15,19 @@ const Navbar = () => {
 
                 <ul className={click ? "navbar__options active" : "navbar__options"}>
                     <li className='navbar__options__option' onClick={closeMobileMenu}>
-                        <a href='#'>Modelos</a>
+                        <a onClick={() => history.push('/categories')}>Modelos</a>
                     </li>
                     <li className='navbar__options__option' onClick={closeMobileMenu}>
                         <a href='#'>Nuestro Concesionario</a>
                     </li>
                     <li className='navbar__options__option' onClick={closeMobileMenu}>
-                        <a href='#'>Racing team</a>
+                        <a onClick={() => history.push('/racing-team')}>Racing team</a>
                     </li>
                 </ul>
                 <div className="mobile-menu" onClick={handleClick}>
                     {click ? (
                     <div className="menu-icon">
-                        <i class="fas fa-bars"></i>
+                        <i className="fas fa-bars"/>
                     </div>
                     ) : (
                     <div className="menu-icon">
@@ -35,8 +35,6 @@ const Navbar = () => {
                     </div>
                     )}
                 </div>
-                    {/* <a className='navbar__item__categories' onClick={() => history.push('/categories')}>Categories</a>
-                    <a className='navbar__item__racing' onClick={() => history.push('/racing-team')}>Racing Team</a> */}
               
             </div>
         );

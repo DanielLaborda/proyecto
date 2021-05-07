@@ -6,7 +6,7 @@ export default class ImagesVehicles extends Component{
     render(){
         const { className, img, id} = this.props;
         return (
-            <div className={`${className}__images`} >
+            <div className={`${className}`} >
                 <img id={id} src={img} />
                 
             </div>
