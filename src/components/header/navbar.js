@@ -15,13 +15,26 @@ const Navbar = () => {
 
                 <ul className={click ? "navbar__options active" : "navbar__options"}>
                     <li className='navbar__options__option' onClick={closeMobileMenu}>
-                        <a onClick={() => history.push('/categories')}>Modelos</a>
+                        <a onClick={() => history.push('/categories')}>
+                            <div className='background-yellow' />
+                            <div className='background-blue' />
+                            <div className='text' >Modelos</div>
+                        </a>
                     </li>
                     <li className='navbar__options__option' onClick={closeMobileMenu}>
-                        <a href='#'>Nuestro Concesionario</a>
+                        
+                        <a href='#'>
+                            <div className='background-yellow' />
+                            <div className='background-blue' />
+                            <div className='text' >Concesionario</div>
+                        </a>
                     </li>
                     <li className='navbar__options__option' onClick={closeMobileMenu}>
-                        <a onClick={() => history.push('/racing-team')}>Racing team</a>
+                        <a onClick={() => history.push('/racing-team')}>
+                            <div className='background-yellow' />
+                            <div className='background-blue' />
+                            <div className='text' >Racing team</div>
+                        </a>
                     </li>
                 </ul>
                 <div className="mobile-menu" onClick={handleClick}>

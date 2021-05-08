@@ -53,7 +53,7 @@ class Vehicles extends Component{
                                 }
                                 <div>---</div>
                             </div>
-
+                            
                             <div className='vehicles__versions'>
                                 {
                                     vehicle.versions.map(version => {

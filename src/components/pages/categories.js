@@ -16,6 +16,15 @@ class Categories extends Component{
         if (!categoryCar){
             return
         }
+
+        let showCategory = document.getElementsByClassName('car-show');
+        if (showCategory){
+            [].forEach.call(showCategory, function(el) {
+                el.classList.remove("car-show");
+                el.classList.add("car-hidden");
+            });
+        }
+
         if(categoryCar.classList.contains('car-hidden')) {
             categoryCar.classList.remove('car-hidden');
             categoryCar.classList.add('car-show');
@@ -34,22 +43,25 @@ class Categories extends Component{
                 {
                     categories.map(category => {
                         return (
-                            <div key={category._id} className="categories-category">
+                            <div key={`category${category._id}`} className="categories-category">
                                 <div className="categories-category__content">
-                                    <div className={`categories-category__content-image ${category._id%2 == 0 ? 'background-blue' : 'background-white'}`}>
-                                        <img src={category.image} />
+                                    <div className='cat-category__content-img'>
+                                        <div className='categories-category__content-image'>
+                                            <div className='background__back'/>
+                                            <img src={category.image} />
+                                        </div>
                                     </div>
-                                    <div className={`categories-category__content-text ${!(category._id%2 == 0) ? 'background-blue' : 'background-white'}`}>
+                                    <div className={`categories-category__content-text `}>
                                         <div className={`categories-category__content-text__title`}>{category.name}</div>
                                         <div className={`categories-category__content-text__description`} >{category.description}</div>
                                         <a onClick={() => this.showHide(category._id)} className={`categories-category__content-text__link`}>CARS</a>
                                     </div>
                                 </div>
-                                <div id={category._id} className="categories-category__cars car-hidden">  
+                                <div id={category._id} className="categories-category__cars car-hidden ">  
                                     {
                                         filteredCars ?
                                         filteredCars.map(filteredCar=> {
-                                            return <CarsCategories key={category._id} className={'categories-category__cars-list'} id={category._id} {...filteredCar}/>
+                                            return <CarsCategories key={`vehicle${filteredCar._id}`}  className={'categories-category__cars'} id={category._id} {...filteredCar}/>
                                         })
                                         : ''
                                     }  
