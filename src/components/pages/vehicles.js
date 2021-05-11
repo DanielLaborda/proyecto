@@ -3,9 +3,9 @@ import React, { Component } from "react";
 import * as actions from '../../actions';
 import { connect } from 'react-redux';
 import VehiclesVersions from "../vehicles/vehiclesVersions";
-import VehiclesColors from "../vehicles/vehiclesColors";
 import ImagesVehicles from "../vehicles/imagesVehicles";
 
+import history from '../../history';
 
 class Vehicles extends Component{
     
@@ -53,23 +53,9 @@ class Vehicles extends Component{
                                 }
                                 <div>---</div>
                             </div>
-                            
-                            <div className='vehicles__versions'>
-                                {
-                                    vehicle.versions.map(version => {
-                                        return <VehiclesVersions key={version._id} className='vehicles__versions' {...version}/>
-                                    })
-                                }                                
-                            </div>
-                            <div className='vehicles__colors'>
-                                {
-                                    vehicle.colors.map(color => {
-                                        return <VehiclesColors key={color.name} className='vehicles__colors__item' {...color} />
-                                    })
-                                }
-                            </div>
 
-                            
+                            <a onClick={() => history.push('/configuration/'+vehicle._id)} className={'btn'}>Configuration</a>
+                                             
                         </div>
                     )
 

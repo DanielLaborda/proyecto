@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 
-
-
-export default class VehiclesColors extends Component{ 
+export default class ConfigurationColors extends Component{ 
     
     render(){
         const { className, color, name, price} = this.props;

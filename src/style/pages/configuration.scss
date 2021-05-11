@@ -1,0 +1,117 @@
+.configuration__form{
+    display: grid;
+    width: 100vw;
+    grid-template-rows: [name-s] 80px [name-e titleVersion-s] 70px [titleVersion-e version-s] 500px [version-e titleColors-s] 70px [titleColors-e image-s] 700px [image-e colors-s] 1fr [colors-e];
+    align-items: center;
+    
+    &__name {
+        grid-row: name-s/name-e;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    &__sectionTitle {
+        &__version {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 500;
+            text-transform: uppercase;
+            grid-row: titleVersion-s/titleVersion-e;
+        }
+        &__colors {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 500;
+            text-transform: uppercase;
+            grid-row: titleColors-s/titleColors-e;
+        }
+    }
+
+    &__versions__card {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        label{
+            transition: all .2s ease;
+        }
+    }
+
+    &__versions {
+        grid-row: version-s/version-e;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &__imagen{
+        grid-row: image-s/image-e;
+        padding-bottom: 20px;
+        display: grid;        
+        height: 700px;
+        justify-self: center;        
+    }
+
+    &__colors {
+        grid-row: colors-s/colors-e;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 10px;
+
+        &__card {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 200px;
+            width: 150px;
+            border: 1px solid #ccc;
+
+            &__item {
+                position: absolute;
+                z-index: 1;
+    
+                &__color {
+                    width: 100px;
+                    height: 100px;
+                }
+                &__name{
+                    font-size: 16px;
+                }
+            }
+        }
+
+        label {
+            position: relative;
+            top: -50px;
+            width: 100px;
+            input {
+                z-index: 2;
+                position: absolute;
+                top: 5px;
+                width: 75px;
+            }
+            
+        }
+        
+        
+    }
+}
+
+.line-separation__versions{
+    height: 1px;
+    border-top: 2px solid #ccc;
+    width: 80%;
+    justify-self: center;
+    grid-column: barVersion-s/barVersion-e;
+}
+.line-separation__colors{
+    grid-column: barColors-s/barColors-e;
+}
+
+.border-version {
+    box-shadow: 0px -1px 6px 10px rgba(36,203,210,1);
+    border-radius: 10px;
+    transform: scale(1.1);
+}
