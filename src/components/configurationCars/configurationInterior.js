@@ -1,9 +1,13 @@
 import React from "react";
 
-export function ConfigurationInterior ({ className, name, complements}){ 
+export function ConfigurationInterior ({ className, name, complements, imageInterior, price}){ 
     return (
-        <div className={`${className}`} >            
-            <div className={`${className}__name`}>
+        <div className={`${className}`} >  
+
+            <div className={`${className}__imageInterior`}>
+                <img src={imageInterior} />
+            </div>
+            <div className={`${className}__title`}>
                 {name}
             </div>
             <div className={`${className}__complements`}>
@@ -13,6 +17,9 @@ export function ConfigurationInterior ({ className, name, complements}){
                     })}
                 </ul>
                 
+            </div>
+            <div className={`${className}__price`}>
+                {price}
             </div>
             
         </div>

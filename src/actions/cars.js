@@ -48,30 +48,36 @@ export function setVehicle() {
                 interiors: [
                     {
                         _id: 0,
+                        imageInterior: 'http://via.placeholder.com/200x200',
                         name: 'Base',
                         complements: [
                             'Full Led',
                             'Leather'
-                        ]
+                        ],
+                        price: 300
                     },
                     {
                         _id: 1,
+                        imageInterior: 'http://via.placeholder.com/200x200',
                         name: 'medium',
                         complements: [
                             'Full Led',
                             'Leather',
                             'dual zone climate control'
-                        ]
+                        ],
+                        price: 300
                     },
                     {
                         _id: 2,
+                        imageInterior: 'http://via.placeholder.com/200x200',
                         name: 'Full',
                         complements: [
                             'Full Led',
                             'Leather',
                             'dual zone climate control',
                             'Bose Music'
-                        ]
+                        ],
+                        price: 300
                     }
                 ],
                 colors:[
@@ -104,21 +110,24 @@ export function setVehicle() {
                         size: '16"',
                         model: 'LL',
                         img: 'http://via.placeholder.com/400x400',
-                        material: 'Aluminio'
+                        material: 'Aluminio',
+                        price: 0
                     },
                     {
                         _id:1,
                         size: '17"',
                         model: 'LS',
                         img: 'http://via.placeholder.com/400x400',
-                        material: 'Aluminio'
+                        material: 'Aluminio',
+                        price: 300
                     },
                     {
                         _id:2,
                         size: '18"',
                         model: 'HL',
                         img: 'http://via.placeholder.com/400x400',
-                        material: 'Aluminio'
+                        material: 'Aluminio',
+                        price: 500
                     }
                 ]
             },
@@ -186,30 +195,36 @@ export function setVehicle() {
                 interiors: [
                     {
                         _id: 0,
+                        imageInterior: 'http://via.placeholder.com/200x200',
                         name: 'Base',
                         complements: [
                             'Full Led',
                             'Leather'
-                        ]
+                        ],
+                        price: 300
                     },
                     {
                         _id: 1,
+                        imageInterior: 'http://via.placeholder.com/200x200',
                         name: 'medium',
                         complements: [
                             'Full Led',
                             'Leather',
                             'dual zone climate control'
-                        ]
+                        ],
+                        price: 300
                     },
                     {
                         _id: 2,
+                        imageInterior: 'http://via.placeholder.com/200x200',
                         name: 'Full',
                         complements: [
                             'Full Led',
                             'Leather',
                             'dual zone climate control',
                             'Bose Music'
-                        ]
+                        ],
+                        price: 300
                     }
                 ],
                 colors:[
@@ -248,21 +263,24 @@ export function setVehicle() {
                         size: '16"',
                         model: 'LL',
                         img: 'http://via.placeholder.com/400x400',
-                        material: 'Aluminio'
+                        material: 'Aluminio',
+                        price: 0
                     },
                     {
                         _id:1,
                         size: '17"',
                         model: 'LS',
                         img: 'http://via.placeholder.com/400x400',
-                        material: 'Aluminio'
+                        material: 'Aluminio',
+                        price: 200
                     },
                     {
                         _id:2,
                         size: '18"',
                         model: 'HL',
                         img: 'http://via.placeholder.com/400x400',
-                        material: 'Aluminio'
+                        material: 'Aluminio',
+                        price: 300
                     }
                 ]
             },
@@ -330,30 +348,36 @@ export function setVehicle() {
                 interiors: [
                     {
                         _id: 0,
+                        imageInterior: 'http://via.placeholder.com/200x200',
                         name: 'Base',
                         complements: [
                             'Full Led',
                             'Leather'
-                        ]
+                        ],
+                        price: 300
                     },
                     {
                         _id: 1,
+                        imageInterior: 'http://via.placeholder.com/200x200',
                         name: 'medium',
                         complements: [
                             'Full Led',
                             'Leather',
                             'dual zone climate control'
-                        ]
+                        ],
+                        price: 300
                     },
                     {
                         _id: 2,
+                        imageInterior: 'http://via.placeholder.com/200x200',
                         name: 'Full',
                         complements: [
                             'Full Led',
                             'Leather',
                             'dual zone climate control',
                             'Bose Music'
-                        ]
+                        ],
+                        price: 300
                     }
                 ],
                 colors:[
@@ -385,21 +409,24 @@ export function setVehicle() {
                         size: '16"',
                         model: 'LL',
                         img: 'http://via.placeholder.com/400x400',
-                        material: 'Aluminio'
+                        material: 'Aluminio',
+                        price: 0
                     },
                     {
                         _id:1,
                         size: '17"',
                         model: 'LS',
                         img: 'http://via.placeholder.com/400x400',
-                        material: 'Aluminio'
+                        material: 'Aluminio',
+                        price: 230
                     },
                     {
                         _id:2,
                         size: '18"',
                         model: 'HL',
                         img: 'http://via.placeholder.com/400x400',
-                        material: 'Aluminio'
+                        material: 'Aluminio',
+                        price: 240
                     }
                 ]
             },
@@ -467,30 +494,36 @@ export function setVehicle() {
                 interiors: [
                     {
                         _id: 0,
+                        imageInterior: 'http://via.placeholder.com/200x200',
                         name: 'Base',
                         complements: [
                             'Full Led',
                             'Leather'
-                        ]
+                        ],
+                        price: 300
                     },
                     {
                         _id: 1,
+                        imageInterior: 'http://via.placeholder.com/200x200',
                         name: 'medium',
                         complements: [
                             'Full Led',
                             'Leather',
                             'dual zone climate control'
-                        ]
+                        ],
+                        price: 300
                     },
                     {
                         _id: 2,
+                        imageInterior: 'http://via.placeholder.com/200x200',
                         name: 'Full',
                         complements: [
                             'Full Led',
                             'Leather',
                             'dual zone climate control',
                             'Bose Music'
-                        ]
+                        ],
+                        price: 300
                     }
                 ],
                 colors:[
@@ -522,21 +555,24 @@ export function setVehicle() {
                         size: '16"',
                         model: 'LL',
                         img: 'http://via.placeholder.com/400x400',
-                        material: 'Aluminio'
+                        material: 'Aluminio',
+                        price: 50
                     },
                     {
                         _id:1,
                         size: '17"',
                         model: 'LS',
                         img: 'http://via.placeholder.com/400x400',
-                        material: 'Aluminio'
+                        material: 'Aluminio',
+                        price: 250
                     },
                     {
                         _id:2,
                         size: '18"',
                         model: 'HL',
                         img: 'http://via.placeholder.com/400x400',
-                        material: 'Aluminio'
+                        material: 'Aluminio',
+                        price: 400
                     }
                 ]
             },
@@ -604,30 +640,36 @@ export function setVehicle() {
                 interiors: [
                     {
                         _id: 0,
+                        imageInterior: 'http://via.placeholder.com/200x200',
                         name: 'Base',
                         complements: [
                             'Full Led',
                             'Leather'
-                        ]
+                        ],
+                        price: 300
                     },
                     {
                         _id: 1,
+                        imageInterior: 'http://via.placeholder.com/200x200',
                         name: 'medium',
                         complements: [
                             'Full Led',
                             'Leather',
                             'dual zone climate control'
-                        ]
+                        ],
+                        price: 300
                     },
                     {
                         _id: 2,
+                        imageInterior: 'http://via.placeholder.com/200x200',
                         name: 'Full',
                         complements: [
                             'Full Led',
                             'Leather',
                             'dual zone climate control',
                             'Bose Music'
-                        ]
+                        ],
+                        price: 300
                     }
                 ],
                 colors:[
@@ -659,21 +701,24 @@ export function setVehicle() {
                         size: '16"',
                         model: 'LL',
                         img: 'http://via.placeholder.com/400x400',
-                        material: 'Aluminio'
+                        material: 'Aluminio',
+                        price: 0
                     },
                     {
                         _id:1,
                         size: '17"',
                         model: 'LS',
                         img: 'http://via.placeholder.com/400x400',
-                        material: 'Aluminio'
+                        material: 'Aluminio',
+                        price: 0
                     },
                     {
                         _id:2,
                         size: '18"',
                         model: 'HL',
                         img: 'http://via.placeholder.com/400x400',
-                        material: 'Aluminio'
+                        material: 'Aluminio',
+                        price: 0
                     }
                 ]
             },
@@ -728,30 +773,36 @@ export function setVehicle() {
                 interiors: [
                     {
                         _id: 0,
+                        imageInterior: 'http://via.placeholder.com/200x200',
                         name: 'Base',
                         complements: [
                             'Full Led',
                             'Leather'
-                        ]
+                        ],
+                        price: 300
                     },
                     {
                         _id: 1,
+                        imageInterior: 'http://via.placeholder.com/200x200',
                         name: 'medium',
                         complements: [
                             'Full Led',
                             'Leather',
                             'dual zone climate control'
-                        ]
+                        ],
+                        price: 300
                     },
                     {
                         _id: 2,
+                        imageInterior: 'http://via.placeholder.com/200x200',
                         name: 'Full',
                         complements: [
                             'Full Led',
                             'Leather',
                             'dual zone climate control',
                             'Bose Music'
-                        ]
+                        ],
+                        price: 300
                     }
                 ],                
                 colors:[
@@ -780,21 +831,24 @@ export function setVehicle() {
                         size: '16"',
                         model: 'LL',
                         img: 'http://via.placeholder.com/400x400',
-                        material: 'Aluminio'
+                        material: 'Aluminio',
+                        price: 0
                     },
                     {
                         _id:1,
                         size: '17"',
                         model: 'LS',
                         img: 'http://via.placeholder.com/400x400',
-                        material: 'Aluminio'
+                        material: 'Aluminio',
+                        price: 20
                     },
                     {
                         _id:2,
                         size: '18"',
                         model: 'HL',
                         img: 'http://via.placeholder.com/400x400',
-                        material: 'Aluminio'
+                        material: 'Aluminio',
+                        price: 30
                     }
                 ]
             },

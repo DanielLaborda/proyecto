@@ -1,6 +1,6 @@
 import React from "react";
 
-export function ConfigRims({ className, img, model, size, material }){ 
+export function ConfigRims({ className, img, model, size, material, price }){ 
     return (
         <div className={`${className}`} > 
             <img src={img}/>         
@@ -10,7 +10,9 @@ export function ConfigRims({ className, img, model, size, material }){
             <div className={`${className}__material`}>
                 {material}
             </div>
-            
+            <div className={`${className}__price`}>
+                $ {price}
+            </div>
         </div>
     );
 }

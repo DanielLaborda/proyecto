@@ -5,14 +5,14 @@ class ConfigurationVersions extends Component{
     render(){
         const { className, name, urlImage, base_price, list } = this.props;
         return (
-            <div className={`${className}__card`} >
-                <div className={`${className}__card__image`}>
+            <div className={`${className}`} >
+                <div className={`${className}__image`}>
                     <img src={urlImage} />
                 </div>
-                <div className={`${className}__card__title`}>
+                <div className={`${className}__title`}>
                     {name}
                 </div>
-                <div className={`${className}__card__list`}>
+                <div className={`${className}__list`}>
                     <ul>
                     {
                         list.map(item => {
@@ -21,7 +21,7 @@ class ConfigurationVersions extends Component{
                     }
                     </ul>
                 </div>
-                <div className='vehicles__base_price'>
+                <div className={`${className}__price`}>
                     {base_price}
                 </div>
             </div>

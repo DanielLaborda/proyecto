@@ -1,8 +1,11 @@
-import React, { Component } from "react";
+import React, { Component, version } from "react";
 import { reduxForm } from 'redux-form';
 import { Field } from 'redux-form';
+import { withRouter } from 'react-router-dom';
 
-import { FormInput, FormButton } from '../formFields';
+import { FormInput, FormButton, FormInputRadioButton } from '../formFields';
+
+
 import ConfigurationColors from "./configurationColors";
 import { ConfigurationInterior } from "./configurationInterior";
 import { ConfigurationTitleSection } from "./configurationTitleSection";
@@ -15,165 +18,104 @@ class ConfigurationForm extends Component{
         super();
 
         this.state = {
-            selectedVersion: '',
-            selectedColor: '',
-            selectedInterior: '',
-            selectedRims: '',
             imagenColor: '',
         }
 
         this.handleOptionColor = this.handleOptionColor.bind(this);
-        this.handleOptionVersion = this.handleOptionVersion.bind(this);
-        this.handleOptionInterior = this.handleOptionInterior.bind(this);
-        this.handleOptionInterior = this.handleOptionInterior.bind(this);
-        this.handleOptionRims = this.handleOptionRims.bind(this);
     }
+   
     componentDidMount() {
         this.setState({
-            selectedColor:this.props.colors[0].name,
-            imagenColor:this.props.colors[0].imageColor,
-            selectedVersion:this.props.versions[0].name
+            imagenColor:this.props.colors[0].imageColor
         });;
     }
     handleOptionColor(e) {
         this.setState({
-            selectedColor: this.props.colors[e.currentTarget.value].name,
-            imagenColor: this.props.colors[e.currentTarget.value].imageColor
-        });
-    }
-    handleOptionVersion(e) {
-
-        let versionSelect = '';
-        this.props.versions.map((version, index) => {
-            if(e.currentTarget.value == version._id){
-                return versionSelect = this.props.versions[index].name
-            } 
-            
-        });
-        this.setState({
-            selectedVersion: versionSelect
-        });
-        const imgs = document.querySelectorAll('.border-version');
-        imgs.forEach(img=>{
-            img.classList.remove('border-version')
-        });
-        document.getElementById(`version${e.currentTarget.value}`).classList.add('border-version');
-    }
-    handleOptionInterior(e) {
-        this.setState({
-            selectedInterior: this.props.interiors[e.currentTarget.value].name
-        });
-    }
-    
-    handleOptionRims(e) {
-        this.setState({
-            selectedRims: this.props.interiors[e.currentTarget.value].name
+            imagenColor: this.props.colors[e.currentTarget.id].imageColor
         });
     }
     render(){
         const { className, handleSubmit, name, colors, versions, interiors, rims } = this.props;
         return (
             <form onSubmit={handleSubmit} className={`${className}`}>
-               
-                
-                <ConfigurationTitleSection className={`${className}__name`} title={name}/>
 
-                <ConfigurationTitleSection className={`${className}__sectionTitle__version`} title='Versions'/>
+                <div className className={`${className}__name`}>
+                    {name}
+                </div>
 
+                <ConfigurationTitleSection className={`${className}__sectionTitle__version sectionTitle`} title='Versions'/>
                 <div className={`${className}__versions`}>
                     {
                         versions.map((version, index) => {
                             return (
-                                <div key={`${version._id}`} className={`${className}__versions__card`}>
-                                    <label id={`version${version._id}`} className={(index==0)? 'border-version' : ''} >
-                                        <input 
-                                            type="radio" value={version._id} name="version" 
-                                            defaultChecked={(index==0)? true : false} 
-                                            onChange={this.handleOptionVersion}
-                                        />
-                                        <ConfigurationVersions key={version._id} className='vehicles__versions' {...version}/>
-                                    </label>
-                                </div>
+                                <label key={`version${version._id}`} className={`${className}__versions__label`}>
+                                    <Field name="vesion" component="input" type="radio" value={version.name}/> 
+                                    <ConfigurationVersions key={version._id} className={`${className}__versions__card`} {...version}/>
+                                </label>
                             )
                         })
                     }    
                 </div>
-                
 
-                <ConfigurationTitleSection className={`${className}__sectionTitle__colors`} title='Colors'/>
+                <ConfigurationTitleSection className={`${className}__sectionTitle__colors sectionTitle`} title='Colors'/>
 
-                <img src={this.state.imagenColor} className={`${className}__imagen`}/>   
+                <div className={`${className}__imagen`}>
+                    <img src={this.state.imagenColor} className={`${className}__imagen__img`}/> 
+                </div>  
                                               
                 <div className={`${className}__colors`}>
                     {
                         colors.map((color, index) => {
                             return (
-                                <div key={`${color._id}`} className={`${className}__colors__card`}>
-                                    <label>
-                                        <input 
-                                            type="radio" value={color._id} name="color" 
-                                            defaultChecked={(index==0)? true : false} 
-                                            onChange={this.handleOptionColor}
-                                        />
-                                        <ConfigurationColors className={`${className}__colors__card__item`} {...color} />
-                                    </label>
-                                </div>
+                                <label key={`color${index}`}>
+                                    <Field name="color" component="input" type="radio" value={color.name}
+                                        onChange={this.handleOptionColor}
+                                        id={index}
+                                    /> 
+                                    <ConfigurationColors className={`${className}__colors__card`} {...color} />
+                                </label>
                             )
                         })
                     }
                 </div>
 
-                <ConfigurationTitleSection className={`${className}__sectionTitle__interior`} title='Interior'/>
+
+                <ConfigurationTitleSection className={`${className}__sectionTitle__interior sectionTitle`} title='Interior'/>
                 <div className={`${className}__interior`}>
                     {
                         interiors.map((interior, index) => {
                             return (
-                                <div key={`${interior._id}`} className={`${className}__interior__card`}>
-                                    <label>
-                                        <input 
-                                            type="radio" value={interior._id} name="interior" 
-                                            defaultChecked={(index==0)? true : false} 
-                                            onChange={this.handleOptionInterior}
-                                        />
-                                        <ConfigurationInterior className={`${className}__interior__card__item`} {...interior}/>
-                                    </label>
-                                </div>
+
+                                <label key={`interior${index}`}>
+                                    <Field name="interior" component="input" type="radio" value={interior.name}/> 
+                                    <ConfigurationInterior className={`${className}__interior__card`} {...interior}/>
+                                </label>
+                                
                             )
                         })
                     }
                 </div>
 
-                <ConfigurationTitleSection className={`${className}__sectionTitle__rims`} title='Rims'/>
+                <ConfigurationTitleSection className={`${className}__sectionTitle__rims sectionTitle`} title='Rims'/>
                 <div className={`${className}__rims`}>
                     {
                         rims.map((rim, index) => {
                             return (
-                                <div key={`${rim._id}`} className={`${className}__rims__card`}>
-                                    <label>
-                                        <input 
-                                            type="radio" value={rim._id} name="rims" 
-                                            defaultChecked={(index==0)? true : false} 
-                                            onChange={this.handleOptionRims}
-                                        />
-                                        <ConfigRims className={`${className}__rims__card__item`} {...rim} />
-                                    </label>
-                                </div>
+                                <label key={`rims${index}`}>
+                                    <Field name="rims" component="input" type="radio" value={`${rim.model} - ${rim.size}`}/> 
+                                    <ConfigRims className={`${className}__rims__card`} {...rim} />
+                                </label>        
                             )
                         })
                     }
                 </div>
-                <br/>
-                <br/>
-                <br/>
-            {/* <label>
-                <input type="checkbox"
-                    //defaultChecked={checked}
-                    //onChange={() => setChecked(!checked)}
-                />             
-                <img src='http://via.placeholder.com/100x100'/>
-            </label> */}
-      
-    
+        
+                <Field className={`${className}__submit`}
+                type='submit'
+                title='Get a quote'
+                name='quote'
+                component={FormButton}/>
+
             </form>
         )
     }
@@ -181,6 +123,8 @@ class ConfigurationForm extends Component{
 
 ConfigurationForm = reduxForm({
     form: 'ConfigurationForm'
-  })(ConfigurationForm);
+})(ConfigurationForm);
   
+
+ConfigurationForm = withRouter(ConfigurationForm);
 export default ConfigurationForm;

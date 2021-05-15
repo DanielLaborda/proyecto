@@ -11,17 +11,17 @@ class Configuration extends Component {
         this.props.filterCarById(id);
             
     }
-    onSubmit = (fields) => {
-        console.log('fields');
+    submit = values => {
+    // print the form values to the console
+        console.log(values)
     }
 
     render() {
         const {vehicleById} = this.props;
-        console.log(this.props);
         return (
             <div className={`configuration`}>
                 {vehicleById.map(vehicle => {
-                    return <ConfigurationForm key={vehicle.name} className='configuration__form' {...vehicle} onSubmit={this.onSubmit}/>
+                    return <ConfigurationForm key={vehicle.name} className='configuration__form' {...vehicle} onSubmit={this.submit}/>
                 })}
                 
             </div>
