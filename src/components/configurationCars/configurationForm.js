@@ -109,12 +109,18 @@ class ConfigurationForm extends Component{
                         })
                     }
                 </div>
+
+
+
+                
         
                 <Field className={`${className}__submit`}
                 type='submit'
                 title='Get a quote'
                 name='quote'
                 component={FormButton}/>
+
+
 
             </form>
         )

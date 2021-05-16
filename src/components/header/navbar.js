@@ -35,8 +35,10 @@ const Navbar = () => {
                             <div className='background-blue' />
                             <div className='text' >Racing team</div>
                         </a>
-                    </li>
+                    </li>                   
                 </ul>
+                <a onClick={() => history.push('/users')}><i className="far fa-user"></i></a>
+                    
                 <div className="mobile-menu" onClick={handleClick}>
                     {click ? (
                     <div className="menu-icon">
