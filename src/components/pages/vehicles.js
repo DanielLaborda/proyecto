@@ -40,8 +40,8 @@ class Vehicles extends Component{
                             </div>
 
                             <div className='vehicles__description'>
-                                <h1>{vehicle.description}</h1>
-                                <h1>Warranty {vehicle.warranty}</h1>
+                                <div className='vehicles__description__text'>{vehicle.description}</div>
+                                <div className='vehicles__description__warranty'>Warranty {vehicle.warranty}</div>
                             </div>
 
 
@@ -65,9 +65,9 @@ class Vehicles extends Component{
                                     })
                                 }
                             </div>
-
-                            <a onClick={() => history.push('/configuration/'+vehicle._id)} className={'btn'}>Configuration</a>
-                                             
+                            <div className='vehicles__configuration'>
+                                <a onClick={() => history.push('/configuration/'+vehicle._id)} className={'vehicles__configuration__btn'}>Configuration</a>
+                            </div>              
                         </div>
                     )
 

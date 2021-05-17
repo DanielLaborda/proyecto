@@ -9,21 +9,24 @@ class ConfigurationVersions extends Component{
                 <div className={`${className}__image`}>
                     <img src={urlImage} />
                 </div>
-                <div className={`${className}__title`}>
-                    {name}
+                <div className={`${className}__content`}>
+                    <div className={`${className}__title`}>
+                        {name}
+                    </div>
+                    <div className={`${className}__list`}>
+                        <ul>
+                        {
+                            list.map(item => {
+                                return <li key={item}>{item}</li>
+                            })
+                        }
+                        </ul>
+                    </div>
+                    <div className={`${className}__price`}>
+                        {base_price}
+                    </div>
                 </div>
-                <div className={`${className}__list`}>
-                    <ul>
-                    {
-                        list.map(item => {
-                            return <li key={item}>{item}</li>
-                        })
-                    }
-                    </ul>
-                </div>
-                <div className={`${className}__price`}>
-                    {base_price}
-                </div>
+                
             </div>
         );
     }

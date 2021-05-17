@@ -1,6 +1,6 @@
 .vehicles {
     display: grid;
-    grid-template-rows: [banner-s] 700px [banner-e description-s] 250px [description-e content-s] 1fr [content-e btn-s] 100px [btn-e];
+    grid-template-rows: [banner-s] 700px [banner-e description-s] 250px [description-e images-s] 1fr [images-e btn-s] 100px [btn-e];
     justify-content: center;
     
     &__banner{
@@ -10,6 +10,7 @@
         height: 700px;
         text-transform: uppercase;
         font-weight: 600;
+
 
         &__title {
             position: absolute;
@@ -34,9 +35,19 @@
         text-align: center;
         display: grid;
         justify-content: center;
+        color: #ccc;
+        &__text {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        &__warranty {
+            font-size: 20px;
+            font-weight: 600;
+        }
     }
 
     &__images  {
+        grid-column: images-s/images-e;
         display: flex;
         flex-flow: row wrap;
         &__item-8 {
@@ -54,6 +65,34 @@
             }
         }
     }
+
+    &__configuration {
+        grid-row: btn-s/btn-e;
+        height: 100px;
+        margin: 30px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        &__btn {
+            width: 243px;
+            background-color: #0fe0f5;
+            color: #3b4248;
+            box-shadow: 0px 0px 40px -5px rgba(0,0,0,0.75);
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: none;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            &:hover {
+                //background-color: #fabd4b;
+                background: #f8ba46;
+            }
+        }
+    }
+    
 
     &__versions {
         display: grid;
@@ -86,40 +125,13 @@
             }
         }
     }
-    .btn {
-        height: 80px;
-        width: 243px;
-        background-color: #0fe0f5;
-        color: #3b4248;
-        box-shadow: 0px 0px 40px -5px rgba(0,0,0,0.75);
-        font-size: 20px;
-        font-weight: 600;
-        text-transform: uppercase;
-        text-decoration: none;
-        border: none;
-        grid-row: btn-s/btn-e;
-        &:hover {
-            //background-color: #fabd4b;
-            background: #f8ba46;
-        }
-    }
-    
-    @media (max-width:998px) {
-        &__versions {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        &__colors {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-    @media (max-width: 768px) {
-        &__versions {
-            display: grid;
-            grid-template-columns: 100vw;
-        }
-        &__colors {
-            grid-template-columns: 1fr;
-        }
+}   
+
+/* Mediaqueries */
+@media (max-width: 768px) {
+    .vehicles__description__text {
+        font-size: 14px;
     }
 }
+
+
