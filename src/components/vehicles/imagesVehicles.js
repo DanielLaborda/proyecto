@@ -8,7 +8,6 @@ export default class ImagesVehicles extends Component{
         return (
             <div className={`${className}`} >
                 <img id={id} src={img} />
-                
             </div>
         );
     }

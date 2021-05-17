@@ -5,20 +5,25 @@
     padding: 10px 40px;
 
     &__logo {
-        font-size: 18px;
+        font-size: 26px;
+        font-weight: 600;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         background-color:#3b4248;
         transform: skewX(-6deg) translate(-10px);
         padding: 0 25px;
+        color: #0fe0f5;
+
         img {
+            cursor: pointer;
             width: 100px;
         }
     }
 
     &__options {
-        font-size: 14px;
+        font-size: 18px;
+        font-weight: 600;
         display: grid;
         width: 100%;
         justify-content: end;
@@ -36,7 +41,7 @@
             align-items: center;
             .background-blue{
                 position: absolute; 
-                background-color: #24cbd2;
+                background-color: #0fe0f5;
                 transform: skewX(-6deg);
                 left: -25px;
                 width: 0px;
@@ -45,7 +50,7 @@
             }
             .background-yellow{
                 position: absolute; 
-                background-color: #D79526;
+                background-color: #f8ba46;
                 transform: skewX(-6deg);
                 left: -15px;
                 width: 0px;

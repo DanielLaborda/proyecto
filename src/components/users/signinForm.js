@@ -27,20 +27,20 @@ class SignInForm extends Component {
     ];
     return (
         <form onSubmit={handleSubmit} className={`${className}`}>
-            <Field className='sign-in-form__email'
+            <Field className={`${className}__email`}
             type='email'
             placeholder='Email'
             name='email'
             component={FormInput}/>
     
-            <Field className='sign-in-form__password'
+            <Field className={`${className}__password`}
             type='password'
             placeholder='Password'
             name='password'
             component={FormInput}/>
             
-            <div className='sign-in-form__line'></div>
-            <Field className='sign-in-form__login'
+            <div className={`${className}__line`}></div>
+            <Field className={`${className}__login`}
             type='submit'
             title='Login'
             name='login'

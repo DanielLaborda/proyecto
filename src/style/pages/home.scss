@@ -7,6 +7,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
+    justify-content: center;
+    align-items: center;
 
     &-cars,
     &-categories,
@@ -20,10 +23,22 @@
     &-racing {
         display: none;
     }
+
+    &__video iframe{
+        
+        width:853px;
+        height:480px;
+    }
 }
 @media (max-width: 648px) {
     .home {
         background-repeat:repeat-y;
-
+        
+    }
+}
+@media (max-width: 853px) {
+    .home__video iframe{
+        width: 100vw;
+        
     }
 }

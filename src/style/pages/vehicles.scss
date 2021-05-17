@@ -1,6 +1,6 @@
 .vehicles {
     display: grid;
-    grid-template-rows: [banner-s] 700px [banner-e description-s] 250px [description-e content-s] 1fr [content-e];
+    grid-template-rows: [banner-s] 700px [banner-e description-s] 250px [description-e content-s] 1fr [content-e btn-s] 100px [btn-e];
     justify-content: center;
     
     &__banner{
@@ -9,13 +9,14 @@
         max-width: 100vw;
         height: 700px;
         text-transform: uppercase;
-           
-        
+        font-weight: 600;
+
         &__title {
             position: absolute;
             top: 175px;
             margin-left: 140px;
-            font-size: 30px;
+            font-size: 34px;
+            font-weight: 600;
         }  
         &__slogan {
             position: absolute;
@@ -35,11 +36,22 @@
         justify-content: center;
     }
 
-    &__images__item  {
-        display: grid;
-        justify-content: center;
-        img {
-            max-width: 100vw;
+    &__images  {
+        display: flex;
+        flex-flow: row wrap;
+        &__item-8 {
+            width: calc(2 / 3 * 100%);
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__item-4 {
+            width: calc(1 / 3 * 100%);
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 
@@ -72,6 +84,23 @@
                 width: 100px;
                 height: 100px;
             }
+        }
+    }
+    .btn {
+        height: 80px;
+        width: 243px;
+        background-color: #0fe0f5;
+        color: #3b4248;
+        box-shadow: 0px 0px 40px -5px rgba(0,0,0,0.75);
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: none;
+        grid-row: btn-s/btn-e;
+        &:hover {
+            //background-color: #fabd4b;
+            background: #f8ba46;
         }
     }
     

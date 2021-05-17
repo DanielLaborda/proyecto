@@ -232,30 +232,7 @@
         }
     }  
 }
-.form-button {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    &__button{
-        height: 80px;
-        width: 243px;
-        background-color: #FFB933;
-        color: #3b4248;
-        box-shadow: 0px 0px 40px -5px rgba(0,0,0,0.75);
-        font-size: 20px;
-        font-weight: 600;
-        text-transform: uppercase;
-        text-decoration: none;
-        border: none;
-        transition: all .5s ease-in;
 
-        &:active {
-            box-shadow: 0;
-            transform: scale(.9);
-        }
-    }
-    
-}   
 /* Media queris */
 @media (max-width: 998px) {
     .configuration__form{

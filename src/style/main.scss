@@ -20,6 +20,8 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-tap-highlight-color: transparent;
 
+    background-color: #3b4248;
+
 }
 
 
@@ -30,3 +32,5 @@ body {
 @import './pages/vehicles';
 @import './pages/configuration';
 @import './sign/signin';
+@import './forms/forms';
+@import './pages/users';

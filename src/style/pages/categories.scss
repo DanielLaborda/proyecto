@@ -21,7 +21,7 @@
                 height: 20vh;
 
                 margin: 20px;
-                background-color: #D79526;
+                background-color: #f8ba46;
                 transform: skewX(-6deg);
             }
             img {
@@ -34,17 +34,25 @@
 
         &-text {
             padding: 30px;
-
+            color: #ccc;
             &__title{
                 font-size: 24px;
                 font-weight: 600;
+                text-transform: uppercase;
             }
             &__description{
                 font-size: 16px;
             }
             &__link {
+                cursor: pointer;
                 font-size: 20px;
-                color: #24cbd2;
+                color: #0fe0f5;
+                border-bottom: 2px solid #0fe0f5;
+
+                &:hover {
+                    color: #24cbd2;
+                    border-color: #24cbd2;
+                }
             }
             
         }
@@ -55,10 +63,18 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         align-items: center;
+        background-color: #ccc;
+        height: 220px;
+        box-shadow: inset 0px 10px 5px 0px rgba(0,0,0,0.54);
         
         &__card {
+            cursor: pointer;
             justify-self: center;
             text-align: center;
+            background-color: white;
+            &:hover {
+                background-color: whitesmoke;
+            }
 
             &__title{
                 font-size: 20px;

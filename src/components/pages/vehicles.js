@@ -18,6 +18,7 @@ class Vehicles extends Component{
     render(){
         
         const { vehicleById } = this.props;
+        let alter = true;
         return (
             <div className='vehicles'>
                 {vehicleById.map(vehicle => {
@@ -45,13 +46,24 @@ class Vehicles extends Component{
 
 
                             <div className='vehicles__images'>
-                                <div>---</div>
                                 {
-                                    vehicle.images.map(image => {
-                                        return <ImagesVehicles key={image._id} className='vehicles__images__item' {...image} />
+                                    vehicle.images.map((image, index) => {
+                                        if ((index+1)%3==0){
+                                            console.log('entra', index);
+                                            if (alter == true) {
+                                                alter = false;
+                                            } else {
+                                                alter = true;
+                                            }
+                                        }
+                                        console.log(alter);
+                                        if (alter == true) {
+                                            return <ImagesVehicles key={image._id} className={(index%2==1) ? 'vehicles__images__item-8': 'vehicles__images__item-4'} {...image} />
+                                        } else {
+                                            return <ImagesVehicles key={image._id} id={index} className={(index%2==0) ? 'vehicles__images__item-8': 'vehicles__images__item-4'} {...image} />
+                                        }
                                     })
                                 }
-                                <div>---</div>
                             </div>
 
                             <a onClick={() => history.push('/configuration/'+vehicle._id)} className={'btn'}>Configuration</a>

@@ -3,9 +3,6 @@ import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 import { FormInput, FormButton } from '../formFields';
 
-import { connect} from 'react-redux';
-import * as actions from '../../actions';
-
 
 class RegisterForm extends Component {
   render() {
