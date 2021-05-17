@@ -105,7 +105,7 @@
         }
     }
 
-    &__colors {
+    &__colors { 
         grid-row: colors-s/colors-e;
         display: grid;
         align-items: center;
@@ -134,12 +134,17 @@
             &:hover {
                 transform: translateY(-20px);
             }
-            &__color {
-                    width: 100px;
-                    height: 100px;
+            &__color img {
+                    width: 150px;
+                    height: 150px;
+                    margin-top: -10px;
             }
             &__name{
                 font-size: 20px;
+                font-weight: 600;
+            }
+            &__price {
+                font-size: 14px;
                 font-weight: 600;
             }
         }
@@ -176,8 +181,10 @@
             &__title {
                 font-size: 18px;
                 font-weight: 600;
+                margin-left: 10px;
             }
             &__complements{
+                margin-left: 10px;
                 ul {
                     list-style-type: none;
                     font-size: 14px;
@@ -185,6 +192,8 @@
             }
             &__price {
                 font-size: 18px;
+                font-weight: 600;
+                margin-left: 10px;
             }
         }
         label {

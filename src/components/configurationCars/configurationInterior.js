@@ -7,22 +7,19 @@ export function ConfigurationInterior ({ className, name, complements, imageInte
                 <img src={imageInterior} />
             </div>
 
-            {/* <div className={`${className}__content`}> */}
-                <div className={`${className}__title`}>
-                    {name}
-                </div>
-                <div className={`${className}__complements`}>
-                    <ul>
-                        {complements.map((complement, index) => {
-                            return <li key={index}>{complement}</li>
-                        })}
-                    </ul>
-                    
-                </div>
-                <div className={`${className}__price`}>
-                    {price}
-                </div>
-            {/* </div> */}
+            <div className={`${className}__title`}>
+                {name}
+            </div>
+            <div className={`${className}__complements`}>
+                <ul>
+                    {complements.map((complement, index) => {
+                        return <li key={index}>{complement}</li>
+                    })}
+                </ul>  
+            </div>
+            <div className={`${className}__price`}>
+                $ {price}
+            </div>
             
         </div>
     );

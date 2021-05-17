@@ -84,26 +84,25 @@ export function setVehicle() {
                     {
                         _id:0,
                         name: 'Azul',
-                        color: '1D2C7B',
+                        color: 'http://via.placeholder.com/400x400',
                         imageColor: 'http://via.placeholder.com/400x400',
                         price: 500
                     },
                     {
                         _id:1,
                         name: 'Rojo',
-                        color: 'B3171B',
+                        color: 'http://via.placeholder.com/400x400',
                         imageColor: 'http://via.placeholder.com/400x400',
                         price: 600
                     },
                     {
                         _id:2,
                         name: 'Acero',
-                        color: '1B1C24',
+                        color: 'http://via.placeholder.com/400x400',
                         imageColor: 'http://via.placeholder.com/400x400',
                         price: 550
                     }
-                ]
-                ,
+                ],
                 rims:[
                     {
                         _id:0,
@@ -231,28 +230,28 @@ export function setVehicle() {
                     {
                         _id:0,
                         name: 'Azul',
-                        color: '1D2C7B',
+                        color: 'http://via.placeholder.com/400x400',
                         imageColor: 'http://via.placeholder.com/400x800',
                         price: 500
                     },
                     {
                         _id:1,
                         name: 'Rojo',
-                        color: 'B3171B',
+                        color: 'http://via.placeholder.com/400x400',
                         imageColor: 'http://via.placeholder.com/500x400',
                         price: 600
                     },
                     {
                         _id:2,
                         name: 'Acero',
-                        color: '1B1C24',
+                        color: 'http://via.placeholder.com/400x400',
                         imageColor: 'http://via.placeholder.com/600x400',
                         price: 550
                     },
                     {
                         _id:3,
                         name: 'Acero Marino',
-                        color: '2E3E4D',
+                        color: 'http://via.placeholder.com/400x400',
                         imageColor: 'http://via.placeholder.com/600x400',
                         price: 550
                     }
@@ -384,21 +383,21 @@ export function setVehicle() {
                     {
                         _id:0,
                         name: 'Azul',
-                        color: '1D2C7B',
+                        color: 'http://via.placeholder.com/400x400',
                         imageColor: 'http://via.placeholder.com/400x400',
                         price: 500
                     },
                     {
                         _id:1,
                         name: 'Rojo',
-                        color: 'B3171B',
+                        color: 'http://via.placeholder.com/400x400',
                         imageColor: 'http://via.placeholder.com/400x400',
                         price: 600
                     },
                     {
                         _id:2,
                         name: 'Acero',
-                        color: '1B1C24',
+                        color: 'http://via.placeholder.com/400x400',
                         imageColor: 'http://via.placeholder.com/400x400',
                         price: 550
                     }
@@ -530,21 +529,21 @@ export function setVehicle() {
                     {
                         _id:0,
                         name: 'Azul',
-                        color: '1D2C7B',
+                        color: 'http://via.placeholder.com/400x400',
                         imageColor: 'http://via.placeholder.com/400x400',
                         price: 500
                     },
                     {
                         _id:1,
                         name: 'Rojo',
-                        color: 'B3171B',
+                        color: 'http://via.placeholder.com/400x400',
                         imageColor: 'http://via.placeholder.com/400x400',
                         price: 600
                     },
                     {
                         _id:2,
                         name: 'Acero',
-                        color: '1B1C24',
+                        color: 'http://via.placeholder.com/400x400',
                         imageColor: 'http://via.placeholder.com/400x400',
                         price: 550
                     }
@@ -676,21 +675,21 @@ export function setVehicle() {
                     {
                         _id:0,
                         name: 'Azul',
-                        color: '1D2C7B',
+                        color: 'http://via.placeholder.com/400x400',
                         imageColor: 'http://via.placeholder.com/400x400',
                         price: 500
                     },
                     {
                         _id:1,
                         name: 'Rojo',
-                        color: 'B3171B',
+                        color: 'http://via.placeholder.com/400x400',
                         imageColor: 'http://via.placeholder.com/400x400',
                         price: 600
                     },
                     {
                         _id:2,
                         name: 'Acero',
-                        color: '1B1C24',
+                        color: 'http://via.placeholder.com/400x400',
                         imageColor: 'http://via.placeholder.com/400x400',
                         price: 550
                     }
@@ -809,18 +808,21 @@ export function setVehicle() {
                     {
                         _id:0,
                         color: 'Azul',
+                        color: 'http://via.placeholder.com/400x400',
                         imageColor: 'http://via.placeholder.com/400x400',
                         price: 500
                     },
                     {
                         _id:1,
                         color: 'Rojo',
+                        color: 'http://via.placeholder.com/400x400',
                         imageColor: 'http://via.placeholder.com/400x400',
                         price: 450
                     },
                     {
                         _id:2,
                         color: 'Acero',
+                        color: 'http://via.placeholder.com/400x400',
                         imageColor: 'http://via.placeholder.com/400x400',
                         price: 700
                     }

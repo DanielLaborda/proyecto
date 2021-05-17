@@ -6,8 +6,8 @@ export default class ConfigurationColors extends Component{
         const { className, color, name, price} = this.props;
         return (
             <div className={`${className}`} >
-                <div className={`${className}__color`} style={{background:`#${color}`}}>
-                    
+                <div className={`${className}__color`}>
+                    <img src={color} />
                 </div>
                 <div className={`${className}__name`}>
                     {name}
