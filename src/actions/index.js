@@ -1,4 +1,3 @@
-
 import {
     setCarCategories,
     setVehicle,
@@ -6,9 +5,15 @@ import {
     filterCarById
 } from './cars';
 
+import {
+    setGarageInfo,
+} from './garage';
+
 export {
     setCarCategories,
     setVehicle,
     filterCarsWithCategoryId,
-    filterCarById
+    filterCarById,
+
+    setGarageInfo
 };

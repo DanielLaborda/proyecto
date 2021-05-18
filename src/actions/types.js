@@ -1,7 +1,11 @@
-// Categories
+// Cars
 export const SET_CAR_CATEGORIES  = 'SET_CAR_CATEGORIES';
 export const SET_VEHICLES  = 'SET_VEHICLES';
 export const FILTER_CARS_WITH_CATEGORY_ID = 'FILTER_CARS_WITH_CATEGORY_ID';
 export const FILTER_CARS_WITH_ID = 'FILTER_CARS_WITH_ID';
 export const SET_CAR_IMAGES = 'SET_CAR_IMAGES';
 export const FILTER_IMAGES_CARS_WITH_ID = 'FILTER_IMAGES_CARS_WITH_ID';
+
+
+// garage
+export const SET_GARAGE_INFO  = 'SET_GARAGE_INFO';

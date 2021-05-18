@@ -23,10 +23,10 @@ const Navbar = () => {
                     </li>
                     <li className='navbar__options__option' onClick={closeMobileMenu}>
                         
-                        <a href='#'>
+                        <a onClick={() => history.push('/garage')}>
                             <div className='background-yellow' />
                             <div className='background-blue' />
-                            <div className='text' >Concesionario</div>
+                            <div className='text' >Garage</div>
                         </a>
                     </li>
                     <li className='navbar__options__option' onClick={closeMobileMenu}>
