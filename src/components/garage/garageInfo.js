@@ -8,7 +8,7 @@ class GarageInfo extends Component{
         return (
             <div className={className}>
     
-                <div className={`${className}__content`} style={{backgroundImage: 'url('+image+')'}}>
+                <div className={`${className}__content`} style={{backgroundImage: 'url("'+image+'")'}}>
                     <div className={`${className}__content__name`}>
                         {name}
                     </div>

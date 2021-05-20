@@ -7,5 +7,8 @@ export const SET_CAR_IMAGES = 'SET_CAR_IMAGES';
 export const FILTER_IMAGES_CARS_WITH_ID = 'FILTER_IMAGES_CARS_WITH_ID';
 
 
-// garage
+// Garage
 export const SET_GARAGE_INFO  = 'SET_GARAGE_INFO';
+
+// Racing
+export const SET_RACING_INFO  = 'SET_RACING_INFO';

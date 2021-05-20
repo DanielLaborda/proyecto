@@ -9,11 +9,16 @@ import {
     setGarageInfo,
 } from './garage';
 
+import {
+    setRacingInfo
+} from './racing';
 export {
     setCarCategories,
     setVehicle,
     filterCarsWithCategoryId,
     filterCarById,
 
-    setGarageInfo
+    setGarageInfo,
+
+    setRacingInfo
 };

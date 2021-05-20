@@ -14,7 +14,7 @@ class GarageMap extends Component{
                 />
                 <Marker position={position}>
                     <Popup>
-                        A pretty CSS3 popup. <br /> Easily customizable.
+                        DLMotor garage. <br /> We are Here.
                     </Popup>
                 </Marker>
             </Map>
