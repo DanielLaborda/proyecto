@@ -7,7 +7,7 @@ class ConfigurationVersions extends Component{
         return (
             <div className={`${className}`} >
                 <div className={`${className}__image`}>
-                    <img src={urlImage} />
+                    <img src={require("../../../static/images/vehicles/"+urlImage)} />
                 </div>
                 <div className={`${className}__content`}>
                     <div className={`${className}__title`}>

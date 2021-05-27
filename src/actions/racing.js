@@ -9,9 +9,9 @@ export function setRacingInfo() {
             {
                 name: 'DLMotor Racing Team',
                 imagesBanner: [
-                    '../../static/images/background1.jpg',
-                    '../../static/images/background2.jpg',
-                    '../../static/images/background3.png'
+                    'banner1.jpg',
+                    'banner2.jpg',
+                    'banner3.jpg'
                 ],
                 slogan: 'NO HAY FRONTERAS MÁS ALLÁ DEL LÍMITE',
                 description: 'Más potencia, más eficiencia, más ingenio. Siempre remodelando y reconstruyendo para romper los esquemas, en una búsqueda interminable para mejorar nuestra tecnología híbrida.',
@@ -19,26 +19,26 @@ export function setRacingInfo() {
                 categories: [
                     {
                         _id: 0,
-                        name:'WRC',
-                        image: 'http://via.placeholder.com/1200x700',
+                        name:'World Rally Championship',
+                        image: 'wrc.jpg',
                         video: 'https://youtube.com/embed/9UEaezz2b8E'
                     },
                     {
                         _id: 1,
-                        name:'WEC',
-                        image: 'http://via.placeholder.com/1200x700',
+                        name:'World Endurance Championship',
+                        image: 'wec.jpg',
                         video: 'https://youtube.com/embed/tLTSW7B4u-k'
                     },
                     {
                         _id: 2,
-                        name:'DRIFT',
-                        image: 'http://via.placeholder.com/1200x700',
+                        name:'Formula DRIFT',
+                        image: 'drift.jpg',
                         video: 'https://www.youtube.com/embed/EWqZP5IJs1Q'
                     },
                     {
                         _id: 3,
-                        name:'DAKAR',
-                        image: 'http://via.placeholder.com/1200x700',
+                        name:'Rally DAKAR',
+                        image: 'dakar.jpg',
                         video: 'https://youtube.com/embed/JmYTRsceo7Y'
                     },
 

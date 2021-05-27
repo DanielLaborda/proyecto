@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 
+import imageGarage from '../../../static/images/garage/garageBackground.jpg';
+
 class GarageInfo extends Component{
     
     render(){
-        const { className, name, description, contact, image } = this.props;
-        console.log(this.props);
+        const { className, name, description, contact } = this.props;
         return (
             <div className={className}>
     
-                <div className={`${className}__content`} style={{backgroundImage: 'url("'+image+'")'}}>
+                <div className={`${className}__content`} style={{backgroundImage: `url(${imageGarage})`}}>
                     <div className={`${className}__content__name`}>
                         {name}
                     </div>

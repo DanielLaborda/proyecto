@@ -3,7 +3,7 @@ import React from "react";
 export function ConfigRims({ className, img, model, size, material, price }){ 
     return (
         <div className={`${className}`} > 
-            <img src={img}/>         
+            <img src={require("../../../static/images/vehicles/" + img)}/>         
             <div className={`${className}__model-size`}>
                 {model} - {size}
             </div>

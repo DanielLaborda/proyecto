@@ -7,6 +7,7 @@ import ImagesVehicles from "../vehicles/imagesVehicles";
 
 import history from '../../history';
 
+
 class Vehicles extends Component{
     
     componentDidMount(){
@@ -22,10 +23,12 @@ class Vehicles extends Component{
         return (
             <div className='vehicles'>
                 {vehicleById.map(vehicle => {
+                    const banner = "../../../static/images/vehicles/" + vehicle.banner;
+
                     return (
                         <div key={vehicle._id} className='vehicles-wrapper'>
                             <div className='vehicles__banner' style={{
-                                background:`url(${vehicle.banner})`,
+                                background:`url(${banner})`,
                                 backgroundSize: "cover",
                                 backgroundPosition: "center"
                             }}>
@@ -49,14 +52,12 @@ class Vehicles extends Component{
                                 {
                                     vehicle.images.map((image, index) => {
                                         if ((index+1)%3==0){
-                                            console.log('entra', index);
                                             if (alter == true) {
                                                 alter = false;
                                             } else {
                                                 alter = true;
                                             }
                                         }
-                                        console.log(alter);
                                         if (alter == true) {
                                             return <ImagesVehicles key={image._id} className={(index%2==1) ? 'vehicles__images__item-8': 'vehicles__images__item-4'} {...image} />
                                         } else {

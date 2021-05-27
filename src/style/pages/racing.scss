@@ -60,8 +60,10 @@
         grid-gap: 20px;
         &__category {
             &__image{
+                filter: grayscale(1);
                 img{
                     width: 400px;
+                    height: 240px;
                 }
             }
             &__name{
@@ -72,6 +74,9 @@
                 background-color: #282c30;
             }
             &:hover {
+                .racing__gategories__category__image {
+                    filter: grayscale(0);
+                }
                 .racing__gategories__category__name {
                     background-color: #0dbece;
                     color: #282c30;
@@ -89,6 +94,9 @@
     background-color: #f8ba46;
     color: #282c30;
     font-weight: 600;
+}
+.activeCategoryImg {
+    filter: grayscale(0);
 }
 
 

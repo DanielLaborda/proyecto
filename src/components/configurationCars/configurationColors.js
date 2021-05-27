@@ -7,7 +7,7 @@ export default class ConfigurationColors extends Component{
         return (
             <div className={`${className}`} >
                 <div className={`${className}__color`}>
-                    <img src={color} />
+                    <img src={require("../../../static/images/vehicles/" + color)} />
                 </div>
                 <div className={`${className}__name`}>
                     {name}

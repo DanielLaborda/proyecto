@@ -30,6 +30,7 @@ class ConfigurationForm extends Component{
         });;
     }
     handleOptionColor(e) {
+        console.log(this.props.colors[e.currentTarget.id].imageColor);
         this.setState({
             imagenColor: this.props.colors[e.currentTarget.id].imageColor
         });
@@ -60,7 +61,10 @@ class ConfigurationForm extends Component{
                 <ConfigurationTitleSection className={`${className}__sectionTitle__colors sectionTitle`} title='Colors'/>
 
                 <div className={`${className}__imagen`}>
-                    <img src={this.state.imagenColor} className={`${className}__imagen__img`}/> 
+                   
+                    {(this.state.imagenColor)? <img src={require("../../../static/images/vehicles/" + this.state.imagenColor)} className={`${className}__imagen__img`}/> : ''}
+                
+
                 </div>  
                                               
                 <div className={`${className}__colors`}>

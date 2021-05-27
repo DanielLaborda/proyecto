@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import PageTitle from "../pageTitle";
 import CarsCategories from "../categories/carsCategories";
 
-
 class Categories extends Component{
     componentDidMount() {
         this.props.setCarCategories(); 
@@ -36,7 +35,6 @@ class Categories extends Component{
     }
     render(){
         const { categories,  filteredCars } = this.props;
-        
         return (
             <div className='categories'>
                 <PageTitle className='categories__page-title' title='Nuestra gama'/>
@@ -48,7 +46,7 @@ class Categories extends Component{
                                     <div className='cat-category__content-img'>
                                         <div className='categories-category__content-image'>
                                             <div className='background__back'/>
-                                            <img src={category.image} />
+                                            <img src={require(`../../../static/images/img_categories/`+ category.image)} />
                                         </div>
                                     </div>
                                     <div className={`categories-category__content-text `}>

@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import RacingCategories from "../racing/racingCategories";
 
 
+
 class RacingTeam extends Component {
     componentDidMount(){
         this.props.setRacingInfo(); 
@@ -16,7 +17,7 @@ class RacingTeam extends Component {
                 el.classList.remove("activeBar");
             });
         }
-        document.getElementById('imageBanner').setAttribute('src',image);
+        document.getElementById('imageBanner').setAttribute('src','../../../static/images/img_racing_banner/'+image);
         e.target.classList.add('activeBar');
     }
     ChangeVideo(video, id) {
@@ -26,9 +27,17 @@ class RacingTeam extends Component {
                 el.classList.remove("activeCategory");
             });
         }
+        let activeCategoryImg = document.getElementsByClassName('activeCategoryImg');
+        if (activeCategoryImg){
+            [].forEach.call(activeCategoryImg, function(el) {
+                el.classList.remove("activeCategoryImg");
+            });
+        }
         document.getElementById('videoRacing').setAttribute('src',video);
         let element = document.getElementById('categoryName'+id);
         element.classList.add("activeCategory"); 
+        let elementImage = document.getElementById('categoryImage'+id);
+        elementImage.classList.add("activeCategoryImg"); 
     }
     render(){
         const { className, racingInfo } = this.props;
@@ -40,11 +49,11 @@ class RacingTeam extends Component {
                         
                             <div className='racing__banner'>
                                 
-                                 <img className='racing__banner__image' id='imageBanner' src={racing.imagesBanner[0]}/> 
+                                 <img className='racing__banner__image' id='imageBanner' src={require(`../../../static/images/img_racing_banner/${racing.imagesBanner[0]}`)}/> 
                                 <div className='racing__banner__sections'>
                                     {racing.imagesBanner.map((image, index) => {
                                         return (
-                                            <a id={`bannerBtn${index}`} key={index} className='racing__banner__sections__button' onClick={(e) => this.ChangeImage(image,e)}></a>
+                                            <a id={`bannerBtn${index}`} key={index} className={`racing__banner__sections__button ${(index==0)? 'activeBar' : ''}`} onClick={(e) => this.ChangeImage(image,e)}></a>
                                         )
                                     })}  
                                 </div>

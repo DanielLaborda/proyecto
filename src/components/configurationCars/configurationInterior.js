@@ -4,7 +4,7 @@ export function ConfigurationInterior ({ className, name, complements, imageInte
     return (
         <div className={`${className}`} >  
             <div className={`${className}__imageInterior`}>
-                <img src={imageInterior} />
+                <img src={require("../../../static/images/vehicles/" + imageInterior)} />
             </div>
 
             <div className={`${className}__title`}>
