@@ -1,32 +1,40 @@
 import React, { Component } from "react";
 import Register from "../users/register";
-import SignIn from "../users/signin";
+import Login from "../users/login";
 
 class Users extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         this.state = {
-            show: "signin"
+            show: "Login"
         }
-        this.showSignin = this.showSignin.bind(this);
+        this.showLogin = this.showLogin.bind(this);
         this.showRegister = this.showRegister.bind(this);
+        this.handleSuccessfulLogin = this.handleSuccessfulLogin.bind(this);
+        this.handleUnsuccessfulLogin = this.handleSuccessfulLogin.bind(this);
     }
-    showSignin() {
-        this.setState({ show: "signin" });
+    showLogin() {
+        this.setState({ show: "Login" });
     }
     showRegister() {
         this.setState({ show: "register" });
+    }
+    handleSuccessfulLogin() {
+        this.props.handleSuccessfulLogin();
+    }
+    handleUnsuccessfulLogin() {
+        this.props.handleUnsuccessfulLogin();
     }
     render() {
         return (
             <div className='users'>
                 <ul>
-                    <li onClick={this.showSignin}>sign in</li>
+                    <li onClick={this.showLogin}>Login in</li>
                     <li onClick={this.showRegister}>register</li>
                 </ul>
-                {(this.state.show === 'signin') ?
-                    <SignIn />
+                {(this.state.show === 'Login') ?
+                    <Login handleSuccessfulLogin={this.handleSuccessfulLogin} handleUnsuccessfulLogin={this.handleUnsuccessfulLogin}/>
                     : 
                     <Register />
                 }

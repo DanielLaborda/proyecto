@@ -1,13 +1,18 @@
-from operator import truediv
-from os import pipe
-import re
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
-from marshmallow.fields import Email
-from sqlalchemy.orm import session
+
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
+
+cors = CORS(app, resources={
+    r"/*": {
+        "origins": True
+    }
+})
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:Dani060990@127.0.0.1/dlmotor'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
@@ -124,7 +129,9 @@ def get_users_id(_id):
         ]
         
     }
-    return result
+    response = jsonify(result)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 @app.route('/users', methods=['POST'])
 def create_user():
@@ -176,7 +183,9 @@ def session():
 
     if(user):
         if (user.user_password == password):
-            return get_users_id(user.user_id)
+            response = get_users_id(user.user_id)
+            response.headers.add('Access-Control-Allow-Origin', '*')
+            return response
         else:
             return "password no correcta"
     else:

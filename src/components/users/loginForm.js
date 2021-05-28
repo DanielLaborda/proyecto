@@ -5,7 +5,7 @@ import { FormInput, FormButton } from '../formFields';
 
 import history from '../../history';
 
-class SignInForm extends Component {
+class LoginForm extends Component {
   render() {
     const { className, handleSubmit } = this.props;
     const links = [
@@ -51,8 +51,8 @@ class SignInForm extends Component {
   }
 }
 
-SignInForm = reduxForm({
-  form: 'SignInForm'
-})(SignInForm);
+LoginForm = reduxForm({
+  form: 'LoginForm'
+})(LoginForm);
 
-export default SignInForm;
+export default LoginForm;
