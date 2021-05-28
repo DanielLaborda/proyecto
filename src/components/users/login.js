@@ -14,14 +14,14 @@ class Login extends Component {
   }
   onSubmit = (fields) => {
     console.log(fields.email);
-    axios.get("http://127.0.0.1:5000/sessions",{
-      "email":fields.email,
-      "password":fields.password
-    }, {withCredentials: true}
-    ).then(response =>
-      console.log(response.data)
-    )
-    this.props.handleSuccessfulLogin();
+    // axios.get("http://127.0.0.1:5000/sessions",{
+    //   "email":fields.email,
+    //   "password":fields.password
+    // }, {withCredentials: true}
+    // ).then(response =>
+    //   console.log(response.data)
+    // )
+    // this.props.handleSuccessfulLogin();
     // this.props.history.push('/account');
   }
   render() {
