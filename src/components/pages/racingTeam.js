@@ -97,8 +97,8 @@ function mapStateToProps(state){
     const{ racingInfo } = state.racing;
     return { 
         racingInfo
-      }
-  }
+    }
+}
   
-  RacingTeam = connect(mapStateToProps, actions)(RacingTeam); 
-  export default RacingTeam;
+RacingTeam = connect(mapStateToProps, actions)(RacingTeam); 
+export default RacingTeam;

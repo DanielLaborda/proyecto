@@ -22,8 +22,8 @@ function mapStateToProps(state){
     const{ categories } = state.cars;
     return { 
         categories
-      }
-  }
+    }
+}
   
 Layout = connect(mapStateToProps, actions)(Layout); 
 export default Layout;

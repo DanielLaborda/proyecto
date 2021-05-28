@@ -18,12 +18,12 @@ export default function(state = INITIAL_STATE, action) {
             return {
                 ...state,
                 vehicles: action.payload
-            }
+            };
         case SET_CAR_CATEGORIES:
             return {
                 ...state,
                 categories: action.payload
-            }
+            };
         case FILTER_CARS_WITH_CATEGORY_ID:
             var filteredCars = [];
             state.vehicles.map(vehicle => {
@@ -34,7 +34,7 @@ export default function(state = INITIAL_STATE, action) {
             return {
                 ...state,
                 filteredCars
-            }
+            };
         case FILTER_CARS_WITH_ID:
             var vehicleById = [];
             state.vehicles.map(vehicle => {
@@ -46,7 +46,7 @@ export default function(state = INITIAL_STATE, action) {
             return {
                 ...state,
                 vehicleById
-            }
+            };
         default: return state;
-    }
+    };
 }

@@ -25,7 +25,7 @@ export class FormButton extends Component {
                 {title}
               </button>
             </div>
-        )
+        );
     }
 }
 

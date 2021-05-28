@@ -12,8 +12,8 @@ class Configuration extends Component {
             
     }
     submit = values => {
-    // print the form values to the console
-        console.log(values)
+        // print the form values to the console
+        console.log(values);
     }
 
     render() {
@@ -34,8 +34,8 @@ function mapStateToProps(state){
     return { 
         vehicles,
         vehicleById
-      }
-  }
+    }
+}
   
-  Configuration = connect(mapStateToProps, actions)(Configuration); 
-  export default Configuration;
+Configuration = connect(mapStateToProps, actions)(Configuration); 
+export default Configuration;

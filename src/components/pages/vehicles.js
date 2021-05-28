@@ -12,9 +12,8 @@ class Vehicles extends Component{
     
     componentDidMount(){
         this.props.setVehicle();  
-        const id = this.props.match.params.id
-        this.props.filterCarById(id);
-            
+        const id = this.props.match.params.id;
+        this.props.filterCarById(id);   
     }
     render(){
         
@@ -83,8 +82,8 @@ function mapStateToProps(state){
     return { 
         vehicles,
         vehicleById
-      }
-  }
+    }
+}
   
-  Vehicles = connect(mapStateToProps, actions)(Vehicles); 
-  export default Vehicles;
+Vehicles = connect(mapStateToProps, actions)(Vehicles); 
+export default Vehicles;

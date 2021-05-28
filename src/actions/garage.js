@@ -14,8 +14,8 @@ export function setGarageInfo() {
                 contact: '555-555-555'
             }
         ]
-    })
-}
+    });
+};
 
 
 

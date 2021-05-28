@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 class VehiclesVersions extends Component{ 
-
     render(){
         const { className, name, urlImage, base_price, list } = this.props;
         return (

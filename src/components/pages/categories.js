@@ -81,8 +81,8 @@ function mapStateToProps(state){
         categories,
         vehicles,
         filteredCars
-      }
-  }
-  
-  Categories = connect(mapStateToProps, actions)(Categories); 
-  export default Categories;
+    }
+}
+ 
+Categories = connect(mapStateToProps, actions)(Categories); 
+export default Categories;

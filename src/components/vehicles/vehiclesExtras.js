@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-
-
 export default class VehiclesExtras extends Component{ 
     
     render(){

@@ -31,8 +31,8 @@ function mapStateToProps(state){
     const{ garageInfo } = state.garage;
     return { 
         garageInfo
-      }
-  }
+    }
+}
   
-  Garage = connect(mapStateToProps, actions)(Garage); 
-  export default Garage;
+Garage = connect(mapStateToProps, actions)(Garage); 
+export default Garage;

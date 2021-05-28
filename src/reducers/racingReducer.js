@@ -4,7 +4,7 @@ import {
 
 const INITIAL_STATE = {
     racingInfo: []
-}
+};
 
 export default function(state = INITIAL_STATE, action) {
     switch (action.type) {
@@ -12,8 +12,7 @@ export default function(state = INITIAL_STATE, action) {
             return {
                 ...state,
                 racingInfo: action.payload
-            }
-    
+            };    
         default: return state;
-    }
+    };
 }

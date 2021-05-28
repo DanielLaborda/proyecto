@@ -14,9 +14,9 @@ class Register extends Component {
     }
     render() {
         return (
-        <div className='register'>
-            <RegisterForm onSubmit={this.onSubmit} className='register__form' />
-        </div>
+            <div className='register'>
+                <RegisterForm onSubmit={this.onSubmit} className='register__form' />
+            </div>
         );
     }
 }

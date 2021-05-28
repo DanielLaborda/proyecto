@@ -4,7 +4,7 @@ import {
 
 const INITIAL_STATE = {
     garageInfo: []
-}
+};
 
 export default function(state = INITIAL_STATE, action) {
     switch (action.type) {
@@ -12,8 +12,7 @@ export default function(state = INITIAL_STATE, action) {
             return {
                 ...state,
                 garageInfo: action.payload
-            }
-    
+            };    
         default: return state;
-    }
+    };
 }

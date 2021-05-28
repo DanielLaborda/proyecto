@@ -8,7 +8,7 @@ class Users extends Component {
 
         this.state = {
             show: "Login"
-        }
+        };
         this.showLogin = this.showLogin.bind(this);
         this.showRegister = this.showRegister.bind(this);
         this.handleSuccessfulLogin = this.handleSuccessfulLogin.bind(this);
@@ -40,7 +40,7 @@ class Users extends Component {
                 }
                 
             </div>
-        )
+        );
     }
 
 }

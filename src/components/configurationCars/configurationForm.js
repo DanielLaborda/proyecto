@@ -1,9 +1,9 @@
-import React, { Component, version } from "react";
+import React, { Component } from "react";
 import { reduxForm } from 'redux-form';
 import { Field } from 'redux-form';
 import { withRouter } from 'react-router-dom';
 
-import { FormInput, FormButton, FormInputRadioButton } from '../formFields';
+import { FormButton } from '../formFields';
 
 
 import ConfigurationColors from "./configurationColors";
@@ -19,7 +19,7 @@ class ConfigurationForm extends Component{
 
         this.state = {
             imagenColor: '',
-        }
+        };
 
         this.handleOptionColor = this.handleOptionColor.bind(this);
     }
@@ -27,7 +27,7 @@ class ConfigurationForm extends Component{
     componentDidMount() {
         this.setState({
             imagenColor:this.props.colors[0].imageColor
-        });;
+        });
     }
     handleOptionColor(e) {
         console.log(this.props.colors[e.currentTarget.id].imageColor);
@@ -114,20 +114,14 @@ class ConfigurationForm extends Component{
                     }
                 </div>
 
-
-
-                
-        
                 <Field className={`${className}__submit`}
                 type='submit'
                 title='Get a quote'
                 name='quote'
                 component={FormButton}/>
 
-
-
             </form>
-        )
+        );
     }
 }
 
