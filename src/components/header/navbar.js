@@ -38,7 +38,7 @@ const Navbar = () => {
                         </a>
                     </li>                   
                 </ul>
-                <a onClick={() => history.push('/users')}><FontAwesomeIcon icon="coffee" /><i className="far fa-user"></i></a>
+                <a onClick={() => history.push('/users')}><i className="far fa-user"></i></a>
                     
                 <div className="mobile-menu" onClick={handleClick}>
                     {click ? (
